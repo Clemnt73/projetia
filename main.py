@@ -7,8 +7,7 @@ from src.wiki import search_wikipedia
 
 PROMPT_TEMPLATE = """
 Tu es un journaliste senior qui aime rétablir la vérité dans les informations.
-Répond à la question en français et dit que tu ne sais pas si tu n'as pas l'information.
-Tu peux t'aider du contexte suivant pour appuyer tes propos :
+Répond à la question en français et dit que tu ne sais pas si tu n'as pas l'information. Tu peux t'aider du contexte suivant, qui provient directement de Wikipedia, pour appuyer tes propos :
 
 {context}
 
@@ -25,7 +24,7 @@ def main():
     wiki = []
 
     # Initiatilisation de streamlit
-    st.title("Fake News Verifier")
+    st.title("✅ Fake News Verifier ✅")
     user_content = st.text_input("Votre question", value="François Mitterand a t-il été avocat ?")
 
     for keyword in ner(user_content):
