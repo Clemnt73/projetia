@@ -26,9 +26,9 @@ class NaturalEntityRecognizer:
 if __name__ == '__main__':
     model = NaturalEntityRecognizer('Jean-Baptiste/camembert-ner')
     sentences = [
-        "Who is Emmanuel Macron ?",
-        "What is the capital of Belgium ?",
-        "Is Emmanuel Macron the president of France ?"
+        "Qui est Emmanuel Macron ?",
+        "Quelle est la capitale de la belgique ?",
+        "Quelle est la superficie de la région urbaine de lyon ?"
     ]
 
     for sentence in sentences:
