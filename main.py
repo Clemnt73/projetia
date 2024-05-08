@@ -2,7 +2,7 @@ import streamlit as st
 
 from src.groq import get_groq_completions
 from src.ner import NaturalEntityRecognizer
-from src.wiki import ask_question
+from src.wiki import search_wikipedia
 
 
 PROMPT_TEMPLATE = """
@@ -29,7 +29,7 @@ def main():
     user_content = st.text_input("Votre question", value="François Mitterand a t-il été avocat ?")
 
     for keyword in ner(user_content):
-        wiki.append(ask_question(keyword))
+        wiki.append(search_wikipedia(keyword))
 
     # Partie BDD vectorielle
     # ...

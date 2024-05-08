@@ -17,12 +17,8 @@ def search_wikipedia(query):
         return "La requête correspond à plusieurs résultats. Veuillez préciser."
 
 
-def ask_question(question):
-    return search_wikipedia(question)
-
-
 if __name__ == "__main__":
     # test utilisation:
     user_question = input("Posez votre question : ")
-    result = ask_question(user_question)
+    result = search_wikipedia(user_question)
     print(result)
