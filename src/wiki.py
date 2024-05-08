@@ -11,8 +11,8 @@ def search_wikipedia(query):
         page_title = search_results[0]
         page = wikipedia.page(page_title)
 
-        summary = page.summary
-        return summary
+        return page.content
+
     except wikipedia.exceptions.DisambiguationError as e:
         return "La requête correspond à plusieurs résultats. Veuillez préciser."
 
