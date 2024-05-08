@@ -21,7 +21,7 @@ Question :
 # Streamlit interface
 def main():
     # Intilialisation des variables
-    ner = NaturalEntityRecognizer('Jean-Baptiste/camembert-ner')
+    ner = NaturalEntityRecognizer('Clemnt73/RoBERTa-ner')
     wiki = []
 
     # Initiatilisation de streamlit

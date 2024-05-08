@@ -24,7 +24,7 @@ class NaturalEntityRecognizer:
 
 
 if __name__ == '__main__':
-    model = NaturalEntityRecognizer('Jean-Baptiste/camembert-ner')
+    model = NaturalEntityRecognizer('Clemnt73/RoBERTa-ner')
     sentences = [
         "Qui est Emmanuel Macron ?",
         "Quelle est la capitale de la belgique ?",
