@@ -16,15 +16,11 @@ def get_groq_completions(user_content):
         model="mixtral-8x7b-32768",
         messages=[
             {
-                "role": "system",
-                "content": "Tu es un journaliste senior qui aime rétablir la vérité dans les informations. \nRépond à la question en français et dit que tu ne sais pas si tu n'as pas l'information."
-            },
-            {
                 "role": "user",
                 "content": user_content
             }
         ],
-        temperature=0.5,
+        temperature=0.2,
         max_tokens=5640,
         top_p=1,
         stream=True,
