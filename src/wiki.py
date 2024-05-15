@@ -13,12 +13,11 @@ def search_wikipedia(query):
 
         return page.content
 
-    except wikipedia.exceptions.DisambiguationError as e:
+    except wikipedia.exceptions.DisambiguationError:
         return "La requête correspond à plusieurs résultats. Veuillez préciser."
 
 
 if __name__ == "__main__":
-    # test utilisation:
     user_question = input("Posez votre question : ")
     result = search_wikipedia(user_question)
     print(result)
